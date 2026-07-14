@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "nodemon index.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "pg": "^8.20.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.8"
+  },
+  "description": "Para iniciar o servidor colocar o comando: nodemon index.mjs node index.mjs",
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

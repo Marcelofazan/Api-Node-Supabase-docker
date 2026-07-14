@@ -1,0 +1,28 @@
+# Starter pipeline for Node.js
+# Build and test a Node.js project with npm.
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. Define a versão do Node.js a ser usada
+- task: UseNode@1
+  inputs:
+    version: '18.x'
+  displayName: 'Instalar Node.js'
+
+# 2. Instala as dependências do projeto
+- script: npm install
+  displayName: 'Instalar dependências (npm install)'
+
+# 3. Executa o build do projeto (se houver um script de build no package.json)
+- script: npm run build --if-present
+  displayName: 'Compilar o projeto (npm run build)'
+
+# 4. Executa os testes automatizados
+- script: npm test
+  displayName: 'Executar testes (npm test)'
