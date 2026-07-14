@@ -1,5 +1,5 @@
 ## 🚀 Api-Node-Supabase-docker
-Exemplo de API com Node.js na plataforma Supabase.
+Exemplo de API com Node.js na plataforma Supabase com banco de dados Postgres.
 
 #### 📋 O que você vai encontrar neste projeto
 | Tecnologia | Descrição |
